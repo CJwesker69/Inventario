@@ -1,0 +1,28 @@
+let inventario = [
+    { nome: 'Teclado', preco: 120, emEstoque: true },
+    { nome: 'Mouse', preco: 50, emEstoque: false },
+    { nome: 'Monitor', preco: 600, emEstoque: false },
+    { nome: 'Fone' , preco: 50, emEstoque: true},
+    { nome: 'Cadeira' , preco: 1000 , emEstoque: true},
+    { nome: 'Mesa' , preco: 500 , emEstoque: true},
+    { nome: 'Headfone' , preco: 100 , emEstoque: false},
+    { nome: 'MousePad' , preco: 40 , emEstoque: true},
+    { nome: 'Teclado Gamer' , preco: 150 , emEstoque: false},
+    { nome: 'Mouse Gamer' , preco: 75 , emEstoque: true },
+    { nome: 'Cabo Hdmi' , preco: 65 , emEstoque: true },
+    { nome: 'Arma Gamer' , preco:420 , emEstoque: true },
+    { nome: 'Municao Gamer' , preco: 69 , emEstoque: false },
+    { nome: 'Mira Gamer' , preco: 22 , emEstoque: true },
+    { nome: 'Colete Gamer' , preco: 666 , emEstoque: false }
+
+    ];
+    for (let i = 0; i < inventario.length; i++) {
+        if (inventario[i].emEstoque) {
+        console.log(inventario[i].nome + ' está em estoque.');
+        }
+        }
+        let produtosEmEstoque = inventario.filter(produto => produto.emEstoque);
+        console.log(produtosEmEstoque);
+
+
+   
